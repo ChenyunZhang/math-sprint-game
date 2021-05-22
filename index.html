@@ -68,31 +68,17 @@
         </div>
 
         <!-- game page -->
-        <div class="card" id="game-page">
+        <div class="card" id="game-page" hidden>
             <!-- item container -->
             <div class="item-container">
-                <div class="selected-item"></div>
-                <div class="item">
-                    <h1>3x3=9</h1>
-                </div>
-                <div class="item">
-                    <h1>3x3=9</h1>
-                </div>
-                <div class="item">
-                    <h1>3x3=9</h1>
-                </div>
-                <div class="item">
-                    <h1>3x3=9</h1>
-                </div>
-                <div class="item">
-                    <h1>3x3=9</h1>
-                </div>
+                <!-- <div class="selected-item"></div> -->
+                <!-- <div class="item"> -->
             </div>
-        </div>
-        <!-- right/wrong buttons -->
-        <div class="item-footer">
-            <button class="wrong">Wrong</button>
-            <button class="right">Right</button>
+            <!-- right/wrong buttons -->
+            <div class="item-footer">
+                <button class="wrong">Wrong</button>
+                <button class="right">Right</button>
+            </div>
         </div>
 
         <!-- score-page -->
@@ -102,7 +88,13 @@
                 <h1 class="title">Your Time</h1>
                 <h1 class="final-time">3.4s</h1>
                 <h1 class="base-time">Base time: 2.5s</h1>
+                <h1 class="penalty-time">Penalty: +1.0s</h1>
             </div>
+            <!-- play again button -->
+            <div class="score-footer">
+                <button class="play-again">Play Again</button>
+            </div>
+
         </div>
     </div>
     <script src="script.js"></script>
