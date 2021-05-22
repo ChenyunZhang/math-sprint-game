@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Sprint Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="game-container">
         <!-- header -->
         <div class="header">
             <h1>Math Sprint Game</h1>
         </div>
-        
+
         <!-- Splash Page -->
-        <div class="card" id="splash-page">
+        <div class="card" id="splash-page" hidden>
             <form id="start-form">
                 <div class="selection-container">
                     <!-- 10 Quesions Radio Input -->
@@ -54,9 +56,56 @@
                         </span>
                     </div>
                 </div>
+                <!-- start button -->
+                <div class="selection-footer">
+                    <button class="start" type="submit">Start Round</button>
+                </div>
             </form>
+        </div>
+        <!-- countdown page -->
+        <div class="card" id="countdown-page" hidden>
+            <h1 class="countdown">3</h1>
+        </div>
+
+        <!-- game page -->
+        <div class="card" id="game-page">
+            <!-- item container -->
+            <div class="item-container">
+                <div class="selected-item"></div>
+                <div class="item">
+                    <h1>3x3=9</h1>
+                </div>
+                <div class="item">
+                    <h1>3x3=9</h1>
+                </div>
+                <div class="item">
+                    <h1>3x3=9</h1>
+                </div>
+                <div class="item">
+                    <h1>3x3=9</h1>
+                </div>
+                <div class="item">
+                    <h1>3x3=9</h1>
+                </div>
+            </div>
+        </div>
+        <!-- right/wrong buttons -->
+        <div class="item-footer">
+            <button class="wrong">Wrong</button>
+            <button class="right">Right</button>
+        </div>
+
+        <!-- score-page -->
+        <div class="card" id="score-page">
+            <!-- score-container -->
+            <div class="score-container">
+                <h1 class="title">Your Time</h1>
+                <h1 class="final-time">3.4s</h1>
+                <h1 class="base-time">Base time: 2.5s</h1>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
